@@ -62,7 +62,7 @@ O que redefine corretamente a cor após a impressão da string. Você também po
                      
 Vimos como **Red/** e **Reset /** funcionam. Os terminais mais básicos possuem um conjunto de 8 cores diferentes:
 
-**Preto :\u001b[30m 
+**Preto :\u001b[30m /**
 
 **Vermelho :\u001b[31m
   

@@ -14,8 +14,9 @@ em vez do esquema de cores padrão preto/branco que seu terminal possui.
 cores
 A coisa mais básica que você pode fazer no seu texto é colori-lo. Todas as cores Ansi se parecem
 
-**Vermelho :\u001b[31m
-**Reiniciar :\u001b[0m
+**Vermelho :\u001b[31m  /**
+
+**Reiniciar :\u001b[0m  /**
 
 Este \u001b personagem é o personagem especial que inicia a maioria das fugas de Ansi; 
 a maioria das linguagens permite esta sintaxe para representar caracteres especiais, 
@@ -61,15 +62,23 @@ O que redefine corretamente a cor após a impressão da string. Você também po
                      
 Vimos como **Red/** e **Reset /** funcionam. Os terminais mais básicos possuem um conjunto de 8 cores diferentes:
 
-**Preto :\u001b[30m
-  Vermelho :\u001b[31m
-  Verde :\u001b[32m
-  Amarelo :\u001b[33m
-  Azul :\u001b[34m
-  Magenta :\u001b[35m
-  Ciano :\u001b[36m
-  Branco :\u001b[37m
-  Reiniciar :\u001b[0m 
+**Preto :\u001b[30m 
+
+**Vermelho :\u001b[31m
+  
+  **Verde :\u001b[32m
+  
+  **Amarelo :\u001b[33m
+  
+  **Azul :\u001b[34m
+  
+  **Magenta :\u001b[35m
+  
+  **Ciano :\u001b[36m
+  
+  **Branco :\u001b[37m
+  
+  **Reiniciar :\u001b[0m 
 
 O que podemos demonstrar imprimindo uma letra de cada cor, seguida de um **Reset :
 

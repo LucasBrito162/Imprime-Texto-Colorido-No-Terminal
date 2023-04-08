@@ -14,9 +14,9 @@ em vez do esquema de cores padrão preto/branco que seu terminal possui.
 cores
 A coisa mais básica que você pode fazer no seu texto é colori-lo. Todas as cores Ansi se parecem
 
-**Vermelho :\u001b[31m  /**
+**Vermelho :\u001b[31m  **
 
-**Reiniciar :\u001b[0m  /**
+**Reiniciar :\u001b[0m  **
 
 Este \u001b personagem é o personagem especial que inicia a maioria das fugas de Ansi; 
 a maioria das linguagens permite esta sintaxe para representar caracteres especiais, 
@@ -62,23 +62,23 @@ O que redefine corretamente a cor após a impressão da string. Você também po
                      
 Vimos como **Red/** e **Reset /** funcionam. Os terminais mais básicos possuem um conjunto de 8 cores diferentes:
 
-**Preto :\u001b[30m /**
+**Preto :\u001b[30m **
 
-**Vermelho :\u001b[31m
+**Vermelho :\u001b[31m **
   
-  **Verde :\u001b[32m
+  **Verde :\u001b[32m **
   
-  **Amarelo :\u001b[33m
+  **Amarelo :\u001b[33m **
   
-  **Azul :\u001b[34m
+  **Azul :\u001b[34m **
   
-  **Magenta :\u001b[35m
+  **Magenta :\u001b[35m **
   
-  **Ciano :\u001b[36m
+  **Ciano :\u001b[36m **
   
-  **Branco :\u001b[37m
+  **Branco :\u001b[37m **
   
-  **Reiniciar :\u001b[0m 
+  **Reiniciar :\u001b[0m **
 
 O que podemos demonstrar imprimindo uma letra de cada cor, seguida de um **Reset :
 
@@ -104,17 +104,25 @@ Com o preto **A?** sendo óbvio e o branco H sendo difícil de distinguir.
                                 
 A maioria dos terminais, além do conjunto básico de 8 cores, também suporta as cores "brilhantes" ou "negritas". Estes têm seu próprio conjunto de códigos, espelhando as cores normais, mas com um adicional ;1 em seus códigos:
 
-**Preto Brilhante :\u001b[30;1m
-  Vermelho Brilhante :\u001b[31;1m
-  Verde brilhante :\u001b[32;1m
-  Amarelo brilhante :\u001b[33;1m
-  Azul brilhante :\u001b[34;1m
-  Magenta brilhante :\u001b[35;1m
-  Ciano brilhante :\u001b[36;1m
-  Branco Brilhante :\u001b[37;1m
-  Reiniciar :\u001b[0m
+**Preto Brilhante :\u001b[30;1m **
 
-Observe que **Redefinir/** é o mesmo: este é o código de redefinição que redefine todas as cores e efeitos de texto.
+ **Vermelho Brilhante :\u001b[31;1m**
+ 
+  **Verde brilhante :\u001b[32;1m**
+  
+  **Amarelo brilhante :\u001b[33;1m**
+  
+  **Azul brilhante :\u001b[34;1m**
+  
+  **Magenta brilhante :\u001b[35;1m**
+  
+  ****Ciano brilhante :\u001b[36;1m**
+  
+  **Branco Brilhante :\u001b[37;1m**
+  
+ **Reiniciar :\u001b[0m**
+
+Observe que **Redefinir** é o mesmo: este é o código de redefinição que redefine todas as cores e efeitos de texto.
 
 Podemos imprimir essas cores brilhantes e ver seus efeitos:
 
@@ -130,7 +138,7 @@ Por fim, após as 16 cores, alguns terminais suportam um conjunto de cores esten
 
 Estes são da forma
 
-**\u001b[38;5;${ID}m
+**u001b[38;5;${ID}m**
 
               import sys
                 for i in range(0, 16):
@@ -150,29 +158,44 @@ Aqui usamos **sys.stdout.writeem /** vez de **print /** para que possamos imprim
 
 Os códigos de escape Ansi permitem que você defina a cor do fundo do texto da mesma forma que permite definir a cor do primeiro plano. Por exemplo, as 8 cores de fundo correspondem aos códigos:
 
-**Fundo preto :\u001b[40m
-  Fundo vermelho :\u001b[41m
-  Fundo Verde :\u001b[42m
-  Fundo amarelo :\u001b[43m
-  Fundo Azul :\u001b[44m
-  Fundo Magenta :\u001b[45m
-  Fundo Ciano :\u001b[46m
-  Fundo Branco :\u001b[47m
+**Fundo preto :\u001b[40m**
+
+  **Fundo vermelho :\u001b[41m**
+  
+  **Fundo Verde :\u001b[42m**
+  
+  **Fundo amarelo :\u001b[43m**
+  
+  **Fundo Azul :\u001b[44m**
+  
+  **Fundo Magenta :\u001b[45m**
+  
+  **Fundo Ciano :\u001b[46m**
+  
+  **Fundo Branco :\u001b[47m**
   
   Com as versões brilhantes sendo:
 
-**Fundo preto brilhante :\u001b[40;1m
-  Fundo Vermelho Brilhante :\u001b[41;1m
-  Fundo Verde Brilhante :\u001b[42;1m
-  Fundo amarelo brilhante :\u001b[43;1m
-  Fundo Azul Brilhante :\u001b[44;1m
-  Fundo Magenta Brilhante :\u001b[45;1m
-  Fundo Ciano Brilhante :\u001b[46;1m
-  Fundo Branco Brilhante :\u001b[47;1m
+      **Fundo preto brilhante :\u001b[40;1m**
+
+      **Fundo Vermelho Brilhante :\u001b[41;1m**
+  
+      **Fundo Verde Brilhante :\u001b[42;1m**
+  
+      **Fundo amarelo brilhante :\u001b[43;1m**
+  
+      **Fundo Azul Brilhante :\u001b[44;1m**
+  
+      **Fundo Magenta Brilhante :\u001b[45;1m**
+ 
+  
+      **Fundo Ciano Brilhante :\u001b[46;1m**
+  
+      **Fundo Branco Brilhante :\u001b[47;1m**
   
   E redefinir é o mesmo:
 
-**Reiniciar :\u001b[0m
+**Reiniciar :\u001b[0m**
 
 Podemos imprimi-los e vê-los funcionar
 
@@ -200,13 +223,15 @@ Planos de fundo de 256 cores também funcionam:
 
 
 
-**Decorações
+**Decorações**
 
 Além das cores e cores de fundo, os códigos de escape Ansi também permitem decorações no texto:
 
-**Negrito :\u001b[1m
-  Sublinhe :\u001b[4m
-  Invertida :\u001b[7m
+   **Negrito :\u001b[1m**
+
+   **Sublinhe :\u001b[4m**
+  
+   **Invertida :\u001b[7m**
   
   Que podem ser usados individualmente:
 
